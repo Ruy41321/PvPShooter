@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5s51p7ui51sn"]
+
+[ext_resource type="Script" uid="uid://c4n5myb0meehs" path="res://scene/Player/player.cpp" id="1_d75ba"]
+[ext_resource type="Texture2D" uid="uid://dm5xgn71gtryg" path="res://assets/stickman.png" id="1_hrul8"]
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_d75ba")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-2, -20, -8, -15, -8, -11, -1, -6, -2, -3, -11, -3, -11, 2, -7, 2, -7, -1, -2, -1, -2, 6, -5, 9, -6, 20, -2, 20, 1, 9, 4, 20, 8, 20, 6, 9, 3, 6, 3, -1, 8, -1, 8, 2, 11, 2, 11, -3, 3, -3, 3, -6, 9, -11, 9, -16, 3, -20)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hrul8")
